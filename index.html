@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacroCrime: Dossiê Metrópole</title>
+    
+    <!-- FUTURO CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SONS DO JOGO -->
+    <audio id="som-camera" src="audio/camera-click.mp3" preload="auto"></audio>
+    <audio id="som-papel" src="audio/papel.mp3" preload="auto"></audio>
+
+    <!-- INTERFACE (TESTE)-->
+    <div id="interface-pasta">
+        <h1>Dossiê Confidencial</h1>
+        <p><strong>Status:</strong> Em investigação</p>
+        
+        <p id="texto-pergunta">CASO 01: O Mercado Central. A sutil sabotagem: Encontre a pessoa colocando algo misterioso no saco de especiarias de um mercador idoso no caos da feira.</p>
+    </div>
+
+    <!-- ZOOM -->
+    <div id="controles-zoom">
+        <button id="btn-diminuir" class="btn-zoom" title="Afastar mapa">-</button>
+        <button id="btn-aumentar" class="btn-zoom" title="Aproximar mapa">+</button>
+    </div>
+
+    <!-- MAPA DO JOGO -->
+    <div id="container-jogo">
+        <img id="imagem-mapa" src="imagens/caso1_feira.jpeg" alt="Mapa isométrico de um mercado central lotado">
+    </div>
+
+    <!-- FINAL -->
+    <div id="modal-feedback">
+        <div id="carimbo-sucesso" class="carimbo">Caso Encerrado</div>
+        <h2 id="titulo-feedback">Excelente trabalho, Detetive!</h2>
+        <p id="mensagem-feedback">Você encontrou o alvo exato. Este caso está encerrado.</p>
+        
+        <!-- TEMPO DE JOGO -->
+        <p id="mensagem-tempo">Duração da investigação: <strong id="tempo-final">00:00</strong></p>
+        
+        <button id="btn-acao" class="btn-acao">Solicitar Novo Caso</button>
+    </div>
+
+    <!-- FUTURO JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
